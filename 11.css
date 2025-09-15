@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* Element Selector */
+  body {
+    font-family: Arial;
+    background-color: #f0f0f0;
+  }
+
+  /* Class Selector */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  /* ID Selector */
+  #special-card {
+    border-left: 5px solid green;
+  }
+
+  /* Pseudo-Class Selector */
+  .card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  /* Descendant and Element Selector */
+  .card h2 {
+    color: #333;
+    margin-top: 0;
+  }
+
+  /* Adjacent Sibling Selector */
+  h2 + p {
+    font-weight: bold;
+  }
+
+  /* Pseudo-Element Selector */
+  p::first-letter {
+    font-size: 1.5em;
+    color: darkblue;
+  }
+
+  
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Normal Card</h2>
+    <p>This is some text in a card.</p>
+  </div>
+
+  <div class="card" id="special-card">
+    <h2>Special Card</h2>
+    <p>This card has a special green border.</p>
+  </div>
+
+</body>
+</html>
